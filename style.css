@@ -34,14 +34,14 @@ main {
 }
 
 .left {
-  width: 52rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .right {
-  width: 52rem;
+  width: 100%;
   font-size: 2rem;
 }
 
@@ -116,4 +116,39 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 540px) {
+  .guess {
+    width: 15rem;
+    /* padding: 1rem; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 80px;
+  }
+  button {
+    scale: 0.8;
+  }
+  .number {
+    margin-top: 25px;
+  }
+  header {
+    padding-bottom: 10px;
+  }
+  main {
+    flex-direction: column;
+    width: 100%;
+  }
+  h1 {
+    font-size: 140%;
+  }
+  .again {
+    margin-top: 50px;
+    margin-left: 17%;
+  }
+  .right {
+    width: 80%;
+    margin-left: 15%;
+    font-size: 1.5rem;
+  }
 }
